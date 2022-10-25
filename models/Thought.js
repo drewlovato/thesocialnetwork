@@ -38,7 +38,7 @@ const thoughtSchema = new Schema(
       maxlength: 280,
       minlength: 1,
     },
-    createDate: {
+    createdDate: {
       type: Date,
       default: Date.now,
       get: formatDate,
@@ -57,6 +57,11 @@ const thoughtSchema = new Schema(
     id: false,
   }
 );
+
+// Returns compact string
+function formatDate(createdDate) {
+  return createdDate.toLocaleString();
+}
 
 // Returns reaction count
 thoughtSchema.virtual("reactionCount").get(function () {
