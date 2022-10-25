@@ -6,13 +6,13 @@ const userSchema = new Schema(
     username: {
       type: String,
       required: true,
-      unique: true,
+      unique: false,
       trim: true,
     },
     email: {
       type: String,
       required: true,
-      unique: true,
+      unique: false,
       validate: {
         validator: function (v) {
           return /^[A-Z0-9_!#$%&'*+/=?`{|}~^.-]+@[A-Z0-9.-]+$/.test(v);
