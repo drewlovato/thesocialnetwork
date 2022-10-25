@@ -21,13 +21,13 @@ connection.once("open", async () => {
     // Get some random assignment objects using a helper function that we imported from ./data
     const thought = generateThoughts(20);
 
-    const userName = getRandomUser();
-    const first = userName.split(" ")[0];
-    const last = userName.split(" ")[1];
+    const username = getRandomUser();
+    const first = username.split(" ")[0];
+    const last = username.split(" ")[1];
     const email = `${first}@${last}.com`;
 
     users.push({
-      userName,
+      username,
       email,
     });
   }
@@ -37,7 +37,7 @@ connection.once("open", async () => {
 
   // Add user to the collection and await the results
   await User.collection.insertOne({
-    userName: "Andrew",
+    username: "Andrew",
     inPerson: false,
     users: [...users],
   });
