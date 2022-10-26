@@ -58,7 +58,9 @@ module.exports = {
   // Delete a user and remove them from the thoughts
   async deleteUser(req, res) {
     try {
-      User.findOneAndRemove({ _id: ObjectId(req.params.userId) });
+      const user = await User.findOneAndRemove({
+        _id: ObjectId(req.params.userId),
+      });
 
       if (user) {
         const thoughts = await Thought.deleteMany({ username: user.username });
