@@ -19,8 +19,7 @@ connection.once("open", async () => {
   // Loop 20 times -- add students to the students array
   for (let i = 0; i < 20; i++) {
     // Get some random assignment objects using a helper function that we imported from ./data
-    const thought = generateThoughts(20);
-
+    const thought = generateThoughts(1);
     const username = getRandomUser();
     const first = username.split(" ")[0];
     const last = username.split(" ")[1];
@@ -29,6 +28,7 @@ connection.once("open", async () => {
     users.push({
       username,
       email,
+      thought,
     });
   }
 
