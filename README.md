@@ -53,3 +53,10 @@ To contact me personally please use email below:
 #### back to [table-of-contents](#table-of-contents)
 
 ### Photo & Video
+
+<img width="1140" alt="Screen Shot 2022-10-29 at 11 41 38 AM" src="https://user-images.githubusercontent.com/59673032/198845957-20bbea33-79cf-44ac-9f1c-a696ee8848ce.png">
+
+VIDEO WAS TOO BIG FOR README.MD PAGE PLEASE SEE SEPERATE FILE TO VIEW APPLICATION
+
+
+
